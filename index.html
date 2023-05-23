@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="imagenes/Logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body class="grid-container">
+
+    <!--------CABECERA-------->
+
+    <header>
+        <div class="contenedor-head">
+            <h1 id="logo">&#x1F50D;Encriptador de Mensajes</h1>
+            <img id="logos" src="imagenes/logo2.png" alt="Logo Alura LATAM">
+        </div>
+    </header>
+
+    <!--------PRINCIPAL-------->
+
+    <main>
+        <section class="contenedor-main" id="inicio">
+            <div class="mensaje">
+                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí..."></textarea>
+                <div class="reglas">
+                    <img id="warning" src="imagenes/Warning-PNG-HD.png" alt="Warning de reglas">
+                    <p id="reglas">Solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <input type="button" value="Encriptar" id="boton-encriptar">
+                    <input type="button" value="Desencriptar" id="boton-desencriptar">
+                </div>
+            </div>
+
+            <section id="respuesta">
+                <div id="antes-respuesta">
+                    <div class="imagen">
+                        <img id="imagen" src="imagenes/Muñeco.png" alt="Muñeco buscador">
+                    </div>
+                    <p id="no-encontrado"><strong>¡Ningún mensaje fue encontrado!</strong></p>
+                    <p id="ingreso">Ingresa en texto que desees encriptar o desencriptar.</p>
+                </div>
+                <textarea id="mih1" disabled class="respuesta-encriptado">
+                </textarea>
+                <button class="copia" id="boton-copia" onclick="copiarAlPortapapeles()">Copiar</button>
+            </section>
+        </section>
+
+    </main>
+
+    <!-------PIE DE PAGINA-------->
+
+    <footer>
+        <div class="piepagina">
+            <p id="desarrollador">Desarrollado por Alejandro Mendive.</p>
+            <div class="logoredes">
+                <a target="_blank" href="https://www.linkedin.com/in/alejandro-mendive-322150108/"><img id="linkedin"
+                        src="imagenes/linkedin-logo-bold.svg" alt="Logo de Linkedin"></a>
+                <a target="_blank" href="https://github.com/alemendive"><img id="linkedin" src="imagenes/github.png"
+                        alt="Logo de Github"></a>
+            </div>
+            <p id="copyr">Copyright ©2023</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
